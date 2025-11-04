@@ -1,4 +1,6 @@
-const { id, ca } = require("zod/v4/locales");
+import { IProduct } from "../interfaces/products.interface";
+
+// const { id, ca } = require("zod/v4/locales");
 
 export const productCategories = [
   {
@@ -6,6 +8,7 @@ export const productCategories = [
     title: "Headphones",
     height: 160,
     width: 122.95,
+    slug: "headphones",
   },
 
   {
@@ -13,6 +16,7 @@ export const productCategories = [
     title: "Speakers",
     height: 146,
     width: 121.49,
+    slug: "speakers",
   },
 
   {
@@ -20,14 +24,19 @@ export const productCategories = [
     title: "Earphones",
     height: 126,
     width: 125,
+    slug: "earphones",
   },
 ];
 
-export const products = [
+export const products: IProduct[] = [
   {
     id: 1,
 
     category: "headphones",
+
+    span: "New Product",
+
+    spanDetail: "New Product",
 
     title: "XX99 Mark II Headphones",
 
@@ -63,8 +72,27 @@ export const products = [
         text: "Travel Bag",
       },
     ],
+
+    categoryProduct: "/images/product-category/category-headphone1.png",
     displayImage: "/images/headphone1/display_image.png",
     featureImage: "/images/headphone1/feature-image.png",
+
+    otherProducts: [
+      {
+        image: "/images/product-category/category-headphone2.png",
+        name: "xx99 mark I",
+      },
+
+      {
+        image: "/images/product-category/category-headphone3.png",
+        name: "xx59",
+      },
+
+      {
+        image: "/images/product-category/category-speaker1.png",
+        name: "zx9 speaker",
+      },
+    ],
   },
 
   {
@@ -106,8 +134,27 @@ export const products = [
         text: "3.5mm 5m Audio Cable",
       },
     ],
-    displayImage: "/images/headphone2/display_image.png",
+
+    categoryProduct: "/images/product-category/category-headphone2.png",
+    displayImage: "/images/headphone2/display-image.png",
     featureImage: "/images/headphone2/feature-image.png",
+
+    otherProducts: [
+      {
+        image: "/images/product-category/category-headphone1.png",
+        name: "xx99 mark II",
+      },
+
+      {
+        image: "/images/product-category/category-headphone3.png",
+        name: "xx59",
+      },
+
+      {
+        image: "/images/product-category/category-speaker1.png",
+        name: "zx9 speaker",
+      },
+    ],
   },
 
   {
@@ -149,14 +196,35 @@ export const products = [
         text: "3.5mm 5m Audio Cable",
       },
     ],
-    displayImage: "/images/headphone3/display_image.png",
+
+    categoryProduct: "/images/product-category/category-headphone3.png",
+    displayImage: "/images/headphone3/display-image.png",
     featureImage: "/images/headphone3/feature-image.png",
+
+    otherProducts: [
+      {
+        image: "/images/product-category/category-headphone1.png",
+        name: "xx99 mark II",
+      },
+
+      {
+        image: "/images/product-category/category-headphone2.png",
+        name: "xx99 mark I",
+      },
+
+      {
+        image: "/images/product-category/category-speaker1.png",
+        name: "zx9 speaker",
+      },
+    ],
   },
 
   {
     id: 4,
 
     category: "speakers",
+
+    span: "New Product",
 
     title: "ZX9 SPEAKER",
 
@@ -197,12 +265,98 @@ export const products = [
         text: "10m Optical Cable",
       },
     ],
-    displayImage: "/images/speaker1/display_image.png",
+
+    categoryProduct: "/images/product-category/category-speaker1.png",
+    displayImage: "/images/speaker1/display-image.png",
     featureImage: "/images/speaker1/feature-image.png",
+
+    otherProducts: [
+      {
+        image: "/images/product-category/category-speaker2.png",
+        name: "zx7 speaker",
+      },
+
+      {
+        image: "/images/product-category/category-headphone2.png",
+        name: "xx99 mark I",
+      },
+
+      {
+        image: "/images/product-category/category-headphone3.png",
+        name: "xx59",
+      },
+    ],
   },
 
   {
     id: 5,
+
+    category: "speakers",
+
+    title: "ZX7 SPEAKER",
+
+    description:
+      "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
+
+    price: 3500,
+
+    features: [
+      "Reap the advantages of a flat diaphragm tweeter cone. This provides a fast response rate and excellent high frequencies that lower tiered bookshelf speakers cannot provide. The woofers are made from aluminum that produces a unique and clear sound. XLR inputs allow you to connect to a mixer for more advanced usage.",
+
+      "The ZX7 speaker is the perfect blend of stylish design and high performance. It houses an encased MDF wooden enclosure which minimises acoustic resonance. Dual connectivity allows pairing through bluetooth or traditional optical and RCA input. Switch input sources and control volume at your finger tips with the included wireless remote. This versatile speaker is equipped to deliver an authentic listening experience.",
+    ],
+
+    box: [
+      {
+        quantity: "2x",
+        text: "Speaker Unit",
+      },
+
+      {
+        quantity: "2x",
+        text: "Speaker Cloth Panel",
+      },
+
+      {
+        quantity: "1x",
+        text: "User Manual",
+      },
+
+      {
+        quantity: "1x",
+        text: "3.5mm 5m Audio Cable",
+      },
+
+      {
+        quantity: "1x",
+        text: "7.5m Optical Cable",
+      },
+    ],
+
+    categoryProduct: "/images/product-category/category-speaker2.png",
+    displayImage: "/images/speaker2/display-image.png",
+    featureImage: "/images/speaker2/feature-image.png",
+
+    otherProducts: [
+      {
+        image: "/images/product-category/category-speaker1.png",
+        name: "zx9 speaker",
+      },
+
+      {
+        image: "/images/product-category/category-headphone2.png",
+        name: "xx99 mark I",
+      },
+
+      {
+        image: "/images/product-category/category-headphone3.png",
+        name: "xx59",
+      },
+    ],
+  },
+
+  {
+    id: 6,
 
     category: "earphones",
 
@@ -245,7 +399,26 @@ export const products = [
         text: "Travel Pouch",
       },
     ],
-    displayImage: "/images/speaker1/display_image.png",
-    featureImage: "/images/speaker1/feature-image.png",
+
+    categoryProduct: "/images/product-category/category-earphone.png",
+    displayImage: "/images/earphone/display-image.png",
+    featureImage: "/images/earphone/feature-image.png",
+
+    otherProducts: [
+      {
+        image: "/images/product-category/category-headphone2.png",
+        name: "xx99 mark I",
+      },
+
+      {
+        image: "/images/product-category/category-headphone3.png",
+        name: "xx59",
+      },
+
+      {
+        image: "/images/product-category/category-speaker1.png",
+        name: "zx9 speaker",
+      },
+    ],
   },
 ];

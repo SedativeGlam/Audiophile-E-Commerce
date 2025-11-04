@@ -1,8 +1,8 @@
-import NavBar from "@/components/NavBar";
-import HeroSection from "./landing/HeroSection";
-import ProductCategory from "./landing/ProductCategory";
-import ProductGallery from "./landing/ProductGallery";
-import About from "@/components/About";
+import HeroSection from "../components/landing/HeroSection";
+import ProductCategory from "../components/landing/ProductCategory";
+import ProductGallery from "../components/landing/ProductGallery";
+import About from "../components/About";
+import NavBar from "../components/NavBar";
 
 export default function Home() {
   return (

@@ -1,17 +1,17 @@
-import Footer from "@/components/Footer";
+import Providers from "./providers";
 import "./globals.css";
-
-// const manrope = Manrope({
-//   subsets: ["latin"],
-//   weight: ["200", "400", "600, 800"], // optional
-// });
+import AppWrapper from "@/components/AppWrapper";
 
 export const metadata = {
   title: "Audiophile e-commerce",
   description: "Audiophile e-commerce",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
@@ -21,8 +21,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        {children}
-        <Footer />
+        <Providers>
+          <AppWrapper>{children}</AppWrapper>
+        </Providers>
       </body>
     </html>
   );

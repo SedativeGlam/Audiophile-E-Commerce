@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex items-center gap-[125px] mt-[200px] mb-[143px] ">
+    <div className="flex items-center gap-[125px] mb-[143px] ">
       <div className="w-[445px] h-[295px] top-[2944px] left-[165px] text-[#000000]">
         <h2 className="w-[445px] h-[88px] font-bold text-[40px] leading-11 tracking-[1.43px] uppercase">
           Bringing you the <span className="text-[#d87d4a]">best</span> audio

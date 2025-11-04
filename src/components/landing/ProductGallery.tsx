@@ -1,15 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductGallery() {
   return (
-    <div>
+    <div className="mb-[200px]">
       <div className="flex justify-around items-center gap-[138.28px] w-[1110px] h-[560px] bg-[#D87D4A] rounded-lg px-[117.49px] relative">
         <div className="shrink-0 ">
           <Image
             className="top-0 left-0 border-px absolute filter brightness-80"
             src="/images/Oval Copy 2.png"
-            width={944}
+            width={795}
             height={944}
             alt="oval-bg"
           />
@@ -48,9 +49,11 @@ export default function ProductGallery() {
             truly remarkable sound.
           </p>
 
-          <button className="bg-[#000000] w-40 h-12 hover:bg-[#4c4c4c] transition-colors duration-300 cursor-pointer">
-            See Product
-          </button>
+          <Link href="/product/4">
+            <button className="bg-[#000000] w-40 h-12 hover:bg-[#4c4c4c] transition-colors duration-300 cursor-pointer text-[13px] font-bold uppercase scale-z-100">
+              See Product
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -60,9 +63,11 @@ export default function ProductGallery() {
             Zx7 Speaker
           </h4>
 
-          <button className="mt-8 text-[#000000] border border-[#000000] font-bold w-40 h-12 hover:bg-[#000000] hover:text-[#ffffff] hover:border-[#000000] transition-colors duration-300 cursor-pointer">
-            See Product
-          </button>
+          <Link href="/product/5">
+            <button className="mt-8 text-[#000000] border border-[#000000] font-bold w-40 h-12 hover:bg-[#000000] hover:text-[#ffffff] hover:border-[#000000] transition-colors duration-300 cursor-pointer  text-[13px] uppercase">
+              See Product
+            </button>
+          </Link>
         </div>
 
         <Image
@@ -90,9 +95,11 @@ export default function ProductGallery() {
               yx1 Earphones
             </h4>
 
-            <button className="border  border-[#000000] w-40 h-12 uppercase font-bold text-[13px] leading-px hover:bg-[#000000] hover:text-[#ffffff] hover:border-[#000000] transition-colors duration-300 cursor-pointer">
-              See Product
-            </button>
+            <Link href="/product/6">
+              <button className="border  border-[#000000] w-40 h-12 uppercase font-bold text-[13px] leading-px hover:bg-[#000000] hover:text-[#ffffff] hover:border-[#000000] transition-colors duration-300 cursor-pointer">
+                See Product
+              </button>
+            </Link>
           </div>
         </div>
       </div>
