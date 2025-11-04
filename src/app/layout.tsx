@@ -1,11 +1,13 @@
+"use client";
+
 import Providers from "./providers";
 import "./globals.css";
 import AppWrapper from "@/components/AppWrapper";
 
-export const metadata = {
-  title: "Audiophile e-commerce",
-  description: "Audiophile e-commerce",
-};
+// export const metadata = {
+//   title: "Audiophile e-commerce",
+//   description: "Audiophile e-commerce",
+// };
 
 export default function RootLayout({
   children,
