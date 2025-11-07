@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className=" h-[365px] top-[3528px] -left-16 bg-[#101010]">
-      <div className="max-w-[1110px] mx-auto">
-        <div className="border border-solid bg-[#d87d4a] w-[101px] h-1 text-[#d87d4a] top-[3528px] left-[101px]"></div>
+    <footer className=" h-[365px] top-[3528px] bg-[#101010]">
+      <div className="lg:max-w-[1110px] mx-auto">
+        <div className="border border-solid bg-[#d87d4a] w-[101px] h-1 text-[#d87d4a]"></div>
 
         <div className="pt-[75px] w-full">
           <div className="flex justify-between items-center gap-10 w-full">
